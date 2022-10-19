@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 años</title>
+
+    <!-- PRELOAD -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css"><!--enlazo normalize-->
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Sacramento&display=swap"
+    crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet"><!--enlazo google fonts-->
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css"><!--enlazo css-->
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor" >
+            <div class="botones">
+                <audio id="mireproductor" loop>
+                    <source src="music/musica.mpeg" type="audio/mpeg">
+                </audio>
+                <div class="contenedor_boton">
+                    <button onclick="document.getElementById ('mireproductor').play()" class="play" id class="fa fa-play"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 4v16l13 -8z" />
+                    </svg>
+                    </button>
+                    
+                    <button onclick="document.getElementById ('mireproductor').load()"  class="exit" id class="fa fapower-of"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-stop" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="5" y="5" width="14" height="14" rx="2" />
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <div>
+                
+            </div>
+            <h1>Agustina</h1>
+            
+            <picture>
+                <source loading="lazy" srcset="img/f6.png" type="image/webp">
+                <h3><img loading="lazy" class="flores-negras" src="img/f6.png" alt=""> 23 | Enero | 2023 </h3>
+            </picture>
+            
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h2 class="centrar-texto">¡Mis 15!</h2>
+        
+        <div class="frase">
+            <p>"Hoy queda en el recuerdo mi niñez,
+                pero hoy renazco para vivir la época más feliz de mi vida:
+                mi adolescencia..."
+            </p>
+        </div>
+    </main>
+    
+    
+    <section class="container">
+        <h2 class="conteo">Sólo Faltan:</h2>
+        <div class="contador">
+            <div>
+                <p id="days">00</p>
+                <span>Días</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Horas</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutos</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Segundos</span>
+            </div>
+        </div>
+    </section>
+    
+    <div class="galeria">
+        <picture>
+            <source loading="lazy" srcset="img/g5.png" type="image/webp">
+            <img loading="lazy" src="img/g5.png" alt="imagen">
+        </picture>
+        <picture>
+            <source loading="lazy" srcset="img/g2.png" type="image/webp">
+            <img loading="lazy" src="img/g2.png" alt="imagen">
+        </picture>
+        <picture>
+            <source loading="lazy" srcset="img/g4.png" type="image/webp">
+            <img loading="lazy" src="img/g4.png" alt="imagen">
+        </picture>
+        <picture>
+            <source loading="lazy" srcset="img/g3.png" type="image/webp">
+            <img loading="lazy" src="img/g3.png" alt="imagen">
+        </picture>
+        <picture>
+            <source loading="lazy" srcset="img/g1.png" type="image/webp">
+            <img loading="lazy" src="img/g1.png" alt="imagen">
+        </picture>
+        <picture>
+            <source loading="lazy" srcset="img/g6.png" type="image/webp">
+            <img loading="lazy" src="img/g6.png" alt="imagen">
+        </picture>
+        
+    </div>
+
+
+<div class="bolas">
+   
+    <div class="contenedor"> <!--CONTENEDOR para q este centrado-->
+        
+        <h2 class="centrar-texto">¿Dónde nos encontramos?</h2>
+        <div class="card">
+            <div class="card__imagen">
+                <picture>
+                    <source loading="lazy" srcset="img/1salon.png" type="image/webp">
+                    <img loading="lazy" src="img/1salon.png" alt="">
+                </picture>
+                
+                <div class="boton">
+                    <a href="https://www.google.de/maps/place/Bodega+Los+Haroldos./@-33.061678,-68.4884389,15z/data=!4m12!1m6!3m5!1s0x0:0xda4017a45af42b09!2sBodega+Los+Haroldos.!8m2!3d-33.061678!4d-68.4884389!3m4!1s0x0:0xda4017a45af42b09!8m2!3d-33.061678!4d-68.4884389"><img src="img/boton1.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="card__imagen2">
+                <picture>
+                    <source loading="lazy" srcset="img/2vestimenta.png" type="image/webp">
+                    <img loading="lazy" src="img/2vestimenta.png" alt="">
+                </picture>
+            </div>
+
+            <div class="card__imagen">
+                <picture>
+                    <source loading="lazy" srcset="img/3regalos.png" type="image/webp">
+                    <img loading="lazy" src="img/3regalos.png" alt="">
+                </picture>
+                
+                <div class="boton">
+                    <a href="https://www.mercadopago.com.ar/"><img src="img/boton2.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="card__imagen2">
+                <picture>
+                    <source loading="lazy" srcset="img/4instagram.png" type="image/webp">
+                    <img loading="lazy" src="img/4instagram.png" alt="">
+                </picture>
+                
+                <div class="boton">
+                    <a href="https://www.instagram.com/"><img src="img/boton3.png" alt=""></a>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>        
+    
+
+    <main class="contenedor">
+        <h2 class="centrar-texto">¡Mis 15!</h2>
+        
+        <div class="frase">
+            <picture>
+                <source loading="lazy" srcset="img/5asistencia.png" type="image/webp">
+                <img loading="lazy" src="img/5asistencia.png" alt="">
+            </picture>
+            
+        </div>
+
+        
+        <div class="boton">
+            <a href="https://wa.me/54226"><img src="img/boton confirmacion.png" alt="">
+            </a>    
+        </div>
+    </main>
+
+    <section class="container">
+        <h2 class="conteo">Nos vemos en...</h2>
+        <div class="contador">
+            <div>
+                        <p id="days2">00</p>
+                        <span>Días</span>
+                    </div>
+                    <div>
+                        <p id="hours2">00</p>
+                        <span>Horas</span>
+                    </div>
+                    <div>
+                        <p id="minutes2">00</p>
+                        <span>Minutos</span>
+                    </div>
+                    <div>
+                        <p id="seconds2">00</p>
+                        <span>Segundos</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="frase">
+                <h4 >Agustina</h4>
+            </div>
+            <div  class="flores-blancas">
+                <picture>
+                    <source loading="lazy" srcset="img/flor blanca.png">
+                    <img loading="lazy" src="img/flor blanca.png">
+                </picture>
+            </div>
+            
+            <footer class="footer">
+                <p>Diseño exclusivo de <a href="https://www.instagram.com/">Los códigos de Ana <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-click" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f8580" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="3" y1="12" x2="6" y2="12" />
+                    <line x1="12" y1="3" x2="12" y2="6" />
+                    <line x1="7.8" y1="7.8" x2="5.6" y2="5.6" />
+                    <line x1="16.2" y1="7.8" x2="18.4" y2="5.6" />
+                    <line x1="7.8" y1="16.2" x2="5.6" y2="18.4" />
+                    <path d="M12 12l9 3l-4 2l-2 4l-3 -9" />
+                  </svg>
+                  </a> | Todos los derechos reservados 2022</p>
+            </footer>
+
+
+    <script src="javascript/modernizr.js"></script> 
+    <script src="javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+:root{/*definimos las variables registradas en el custom propertie*/
+    --fontDancing: 'Dancing Script', cursive;
+    --fontImprenta: 'Open Sans', sans-serif;
+    --fontSacramento: 'Sacramento', cursive;
+
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #D9D9D9;
+    --celeste: #bec2ee;
+}
+html{
+    box-sizing: border-box;/*para que el borde, el pading, etc no afecte el ancho de los elementos*/
+    font-size: 62.5%;/*1rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;/*lo q hace inherit es heredar del elemento padre(html)*/
+}
+body{
+    background-color: var(--negro);
+}
+
+
+/*GLOBALES: es lo q se va a usar más d una vez*/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto; /*para centrar horizontalmente xq no voy a poner display flex para centrar*/
+   
+}
+a{
+    text-decoration: none;/*le quita el subrayado a los enlaces*/
+    color: var(--negro);
+}
+h1{
+    font-family: var(--fontSacramento);
+    font-size: 10rem;
+    margin-top: 10rem;
+} 
+h2{
+    font-family: var(--fontDancing);
+    font-size: 5rem;
+    color: var(--blanco);
+} 
+h3{
+    font-family: var(--fontSacramento);
+    font-size: 4rem;
+}
+h4{
+    font-family: var(--fontSacramento);
+    font-size: 8rem;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+.frase{
+    font-family: var(--fontDancing);
+    color: var(--blanco);
+    font-size: 5rem;
+}
+/*UTILIDADES*/
+.no-margin{ /*el navegador agrega margenes automaticos y hacemos esto para q no se agreguen*/
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+/*HEADER*/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;/*para q tome todo el espacio disponible*/
+    /*background-position: center center;para q la imagen fluya hacia el centro cuando la achico*/
+}
+.header__texto{
+    text-align: center;
+    color: var(--negro);
+   margin-top: 5rem;
+}
+@media (min-width: 768px){
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+.flores-negras{
+    width: 8rem;
+    height: 8rem;
+    place-items: center;
+}
+.flores-blancas{
+    font-size: 2rem;
+    text-align: center;
+}
+/*MUSICA*/
+@media (min-width: 768px){
+    .botones{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        
+    }
+}
+.contenedor_boton button{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+    background: transparent;
+    transition: 0.7s;
+}
+.contenedor_boton button i{
+    font-size: 50px;
+}
+.contenedor_boton button:hover{
+    cursor: pointer;
+}
+.contenedor_boton button.play{
+    border: 3px solid rgb(121, 118, 118);
+    color: rgb(214, 222, 225);
+}
+
+.contenedor_boton button.exit{
+    border: 3px solid rgb(121, 118, 118);
+    color: rgb(214, 222, 225);
+}
+.contenedor_boton button.play:hover{
+    box-shadow: 0px 0px 57px 8px rgb(135, 137, 137);
+    background: rgba(58, 59, 59, 0.151);
+}
+
+.contenedor_boton button.exit:hover{
+    box-shadow: 0px 0px 57px 8px rgb(135, 137, 137);
+    background: rgba(58, 59, 59, 0.151);
+}
+
+/*FRASE*/
+.frase{
+    text-align: center;
+}
+
+/*cuenta regresiva*/
+.container{
+    width: 100%;
+    min-height: 50vh; /*minimo de altura*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.contador{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.contador .div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+}
+.contador p{
+    display: grid;
+    place-items: center;
+    border: solid 2px var(--blanco);
+    width: 100px;
+    height: 70px;
+    box-shadow: 0px 0px 6px 2px var(--blanco);
+    color: var(--blanco);
+    border-style: dotted;
+    font-weight: bold;
+    background-color: var(--negro);
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 50px;  
+    
+}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--blanco);  
+}
+
+/*galeria*/
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.galeria img{
+    max-width: 400px;
+    padding: 3rem;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s; 
+}
+.galeria img:hover{
+    -webkit-transform: scale(1.2);   
+}
+
+img .galeria_dos {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+img .galeria_dos {
+    max-width: 400px;
+    padding: 3rem;  
+}
+
+/*CARD*/
+@media (min-width: 768px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/*boton*/
+
+.boton{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+a{
+    cursor: pointer!important;   
+ }
+
+.bolas{
+    background-image: url(../img/bolatres.jpg);
+}
+/**footer**/
+.footer{
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--negro);
+    background-color: var(--blanco);
+    font-size: 1.5rem;
+    font-family: var(--fontImprenta);
+}
